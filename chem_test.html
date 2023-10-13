@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 500px) {
+  /*.big_screen{display: none}*/
+  .sidebar a {
+    text-align: center;
+    float: none;
+
+  }
+}
+  </style>
+      <style>
+          .inline{
+              display: inline-block;
+
+          }
+          .file_card{
+              margin: 10px;
+              vertical-align: middle;
+              horiz-align: center;
+          }
+          .both_margins{
+              margin-left: 10px;
+              margin-right: 10px;
+          }
+.thick-border{
+    border: #6c757d 10px solid;
+}
+  .title-case {
+    text-transform: capitalize;
+  }
+      </style>
+  </head>
+  <body>
+
+<!--<div class="content">-->
+<!-- The sidebar -->
+<div class=" col-lg-2 sidebar ">
+  <a onclick="switch_to_dic(source['children'])">Home</a>
+  <a href="mailto:touroresources@gmail.com">Contact</a>
+
+
+<div class="big_screen">
+    <div class="dropdown show">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #6c757d">
+    WhatsApp Chat Links
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+    <a class="dropdown-item" href="https://chat.whatsapp.com/Bc52i6BA5SXEyVsnK3ZmPs" target="_blank">Touro Ave J</a>
+    <a class="dropdown-item" href="https://chat.whatsapp.com/G18yLm1ddoLIJ3JN4iEV1b" target="_blank">Job Network</a>
+    <a class="dropdown-item" href="https://chat.whatsapp.com/CPp8UnNnIn1DWJdYPM7vCr" target="_blank" >Pre Health Community</a>
+    <a class="dropdown-item" href="https://chat.whatsapp.com/GVCdun09DHgGp7dQ0nbq9t" target="_blank" >Books Listings</a>
+  </div>
+</div>
+</div>
+  </div>
+
+<!-- Page content -->
+<div class="content">
+<div style="height: 10px;"></div>
+
+
+    <div id="cards">
+
+    </div><!--cards-->
+
+
+
+
+
+</div> <!--end content-->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Your custom JavaScript -->
+<script>
+  $(document).ready(function() {
+    $('.dropdown-toggle').dropdown();
+  });
+</script>
+
+<script src="script.js"></script>
+  </body>
+</html>
