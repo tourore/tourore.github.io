@@ -159,130 +159,14 @@ function switch_to_dic(dict){
 
 
 
-var source ={
-    'children': {
-        'info':'',
-        'chem': {
-            'type': 'folder',
-            'url': 'chemmain',
-            'path': '',
-            'children': {
-                info: '',
-                'orgo sub': {
-                    'type': 'folder',
-                    'url': 'example.com',
-                    'path': 'chem',
-                    'children': {
-                        'orgo book': {'type': 'folder', 'url': 'example.com', 'path': 'chem/orgo sub', 'children': {}},
-                        'orgo test': {'type': 'file', 'url': 'example.com', 'path': 'chem/orgo sub', 'children': {}},
-                        info: ``
-                    }
-                },
-                'chemistry sub': {
-                    'type': 'folder',
-                    'url': 'example.com',
-                    'path': 'chem',
-                    'children': {
-                        'orgo book': {'type': 'folder', 'path': 'Chem/Phys', 'url': 'example.com',},
-                        'orgo test': {'type': 'file', 'path': 'Chem/Phys', 'url': 'example.com'},
-                        info: ``
-                    }
-                },
-            },
-
-        },
-        'math': {
-            'type': 'folder',
-            'url': 'math.com',
-            'path': '',
-            'children': {
-                'precalce': {
-                    'type': 'folder',
-                    'url': 'math-example.com',
-                    'path': 'math',
-                    'children': {
-                        'math book': {'type': 'folder', 'org': 'Chem/Phys', 'url': 'example.com',},
-                        'math test': {'type': 'file', 'org': 'Chem/Phys', 'url': 'example.com'},
-                        info: `<p class="card-text"> math info <br>... </p>`
-                    }
-                },
-                info: `    <p class="card-text"> parent this is where  overall math desc the desc blah blah <br> about the teacher is ...<br> more info </p>
-    <a href="#" class="card-link">link to a relevvent site</a>`
-            }
-
-
-        },
-    }, // end children
-    }
 
 
 
-source = {
-    children: {
-        'info':'',
-        'Science': 	 {
-            'type': 'folder',
-            'url': 'http://example.com',
-            'path':'source/Science' ,
-            'children': {}
-        } ,
-        'Math': 	 {
-            'type': 'folder',
-            'url': 'http://example.com',
-            'path':'source/Math' ,
-            'children': {
-                'info':'',
-                'algerba': 	 {
-                    'type': 'folder',
-                    'url': 'http://example.com',
-                    'path':'source/Math/algerba' ,
-                    'children': {
-                        'info':'',
-                        'grenidear': 	 {
-                            'type': 'folder',
-                            'url': 'http://example.com',
-                            'path':'source/Math/algerba/grenidear' ,
-                            'children': {
-                                'info':'',
-                                'grenidear test.pdf': 	 {
-                                    'type': 'file',
-                                    'url': 'http://example.com',
-                                    'path':'source/Math/algerba/grenidear/grenidear test.pdf' ,
-                                    'children': {}
-                                } ,
-                            }
-                            },
-                        'book.doc': 	 {
-                            'type': 'file',
-                            'url': 'http://example.com',
-                            'path':'source/Math/algerba/book.doc' ,
-                            'children': {}
-                        } ,
-                        'answers.pdf': 	 {
-                            'type': 'file',
-                            'url': 'http://example.com',
-                            'path':'source/Math/algerba/answers.pdf' ,
-                            'children': {}
-                        } ,
-                    }
-                    } ,
-                'precalc': 	 {
-                    'type': 'folder',
-                    'url': 'http://example.com',
-                    'path':'source/Math/precalc' ,
-                    'children': {
-                        'Midterm: 202270-PSYN-101-BDD-BJ-VC-14983.pdf': 	 {
-                            'type': 'file',
-                            'url': 'http://example.com',
-                            'path':'source/Math/precalc/Midterm: 202270-PSYN-101-BDD-BJ-VC-14983.pdf' ,
-                            'children': {}
-                        } ,
-                    }
-                    } ,
-            }
-            } ,
-    }}
 
-source = {children: {'Heac crap': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'' , 'children': {'Sociology': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'Heac crap' , 'children': {'Fall Essay Promt.doc': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Sociology' , 'children': {} } ,'Fall Essay .pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Sociology' , 'children': {} } ,'Fall midterm promt .pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Sociology' , 'children': {} } ,'Fall Final promt.docx': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Sociology' , 'children': {} } ,'SASN 103 Spring midterm.docx': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Sociology' , 'children': {} } ,}  } ,'Psychology': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'Heac crap' , 'children': {'Midterm: 202270-PSYN-101-BDD-BJ-VC-14983.pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Psychology' , 'children': {} } ,}  } ,}  } ,'math': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'' , 'children': {'precalc': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'math' , 'children': {'chem test.pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'math/precalc' , 'children': {} } ,}  } ,}  } ,'chem': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'' , 'children': {'orgo sub': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'chem' , 'children': {'chem book.doc': 	 {'type': 'file', 'url': 'http://example.com', 'path':'chem/orgo sub' , 'children': {} } ,'chem test.pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'chem/orgo sub' , 'children': {} } ,}  } ,'chemistry sub': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'chem' , 'children': {'orgo book.doc': 	 {'type': 'file', 'url': 'http://example.com', 'path':'chem/chemistry sub' , 'children': {} } ,'orgo test.pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'chem/chemistry sub' , 'children': {} } ,}  } ,}  } ,}}
+source = {children: {'Heac crap': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'' , 'children': {'Sociology': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'Heac crap' , 'children': {'Fall Essay Promt.doc': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Sociology' , 'children': {} } ,'Fall Essay .pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Sociology' , 'children': {} } ,'Fall midterm promt .pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Sociology' , 'children': {} } ,'Fall Final promt.docx': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Sociology' , 'children': {} } ,'SASN 103 Spring midterm.docx': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Sociology' , 'children': {} } ,'info':'Starting testcode'}  } ,'Psychology': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'Heac crap' , 'children': {'Midterm: 202270-PSYN-101-BDD-BJ-VC-14983.pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'Heac crap/Psychology' , 'children': {} } ,'info':'Starting testcode'}  } ,'info':'count: '}  } ,'math': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'' , 'children': {'precalc': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'math' , 'children': {'chem test.pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'math/precalc' , 'children': {} } ,'info':'Starting testcode'}  } ,'info':'Starting testcode'}  } ,'chem': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'' , 'children': {'orgo sub': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'chem' , 'children': {'chem book.doc': 	 {'type': 'file', 'url': 'http://example.com', 'path':'chem/orgo sub' , 'children': {} } ,'chem test.pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'chem/orgo sub' , 'children': {} } ,'info':'Starting testcode'}  } ,'chemistry sub': 	 {'type': 'folder', 'url': 'http://example.com', 'path':'chem' , 'children': {'orgo book.doc': 	 {'type': 'file', 'url': 'http://example.com', 'path':'chem/chemistry sub' , 'children': {} } ,'orgo test.pdf': 	 {'type': 'file', 'url': 'http://example.com', 'path':'chem/chemistry sub' , 'children': {} } ,'info':'Starting testcode'}  } ,'info':'count: '}  } ,'info':'count: '}}
+
+source = {children:{'Chemistries':{'type':'folder','url':'https://chemisties.com','path':'','children':{'Chemistry ':{'type':'folder','url':'https://drive.google.com/file/d/1sKzlKAK8GMObyFwiyT4ewXVIYHb84j9h/view?usp=drivesdk','path':'Chemistries','children':{'periodic_table_multicoloured.pdf':{'type':'file','url':'https://drive.google.com/file/d/1sKzlKAK8GMObyFwiyT4ewXVIYHb84j9h/view?usp=drivesdk','path':'Chemistries/Chemistry ','children':{}},'info':'Starting testcode'}},'Organic Chemistry':{'type':'folder','url':'https://orgo.com','path':'Chemistries','children':{'Orgo Book.pdf':{'type':'file','url':'https://drive.google.com/file/d/1pEoOikrY0fmOpoUyGXAnxSpTbX4FyGpR/view?usp=drivesdk','path':'Chemistries/Organic Chemistry','children':{}},'info':'Starting testcode'}},'info':'Starting testcode'}},'info.txt':{'type':'file','url':'https://drive.google.com/file/d/1aQyPgdXFlGBVm7us01jAJPwchOkiZNHn/view?usp=drivesdk','path':'','children':{}},'info':'Starting testcode'}}
+
+
 switch_to_dic(source['children'])
 
