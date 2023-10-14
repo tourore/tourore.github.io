@@ -20,7 +20,7 @@
 }
 
 /* Sidebar links */
-.sidebar a {
+.sidebar a, .sidebar button {
   display: block;
   color: black;
   padding: 16px;
@@ -30,7 +30,7 @@
 
 
 /* Links on mouse-over */
-.sidebar a:hover:not(.active) {
+.sidebar a:hover:not,.sidebar button:hover:not(.active) {
   background-color: #6c757d;
   color: white;
 }
@@ -94,9 +94,12 @@ div.content {
   <a href="mailto:touroresources@gmail.com">Contact</a>
 
 
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #6c757d; border: none;">
+<!--  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #6c757d; border: none;">-->
+<!--    WhatsApp Chat Links-->
+<!--  </a>-->
+      <button class="" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="border: none">
     WhatsApp Chat Links
-  </a>
+  </button>
 <div class="collapse" id="collapseExample">
     <a class="dropdown-item" href="https://chat.whatsapp.com/Bc52i6BA5SXEyVsnK3ZmPs" target="_blank">Touro Ave J</a>
     <a class="dropdown-item" href="https://chat.whatsapp.com/G18yLm1ddoLIJ3JN4iEV1b" target="_blank">Job Network</a>
