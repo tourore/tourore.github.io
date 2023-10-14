@@ -24,13 +24,19 @@ function get_file_html(title,org,link, type, path){
     img = ''
     if (type.includes('fol')) { img = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="card-title bi bi-folder2 inline" viewBox="0 0 16 16">
       <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
-    </svg>`}
+    </svg>`;
+    big_button = ` `;
+    small_button = `onclick="switch_to_dic(${func_path})" `;
+    }
     else { img = ` <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-font-fill" viewBox="0 0 16 16">
   <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM5.057 6h5.886L11 8h-.5c-.18-1.096-.356-1.192-1.694-1.235l-.298-.01v5.09c0 .47.1.582.903.655v.5H6.59v-.5c.799-.073.898-.184.898-.654V6.755l-.293.01C5.856 6.808 5.68 6.905 5.5 8H5l.057-2z"/>
-</svg>`}
+</svg>`;
+    big_button = `onclick="openNewWindow('${link}')" `;
+    small_button = ``;
+    }
 
      return `
-    <div class="card file_card">
+    <div class="card file_card" ${big_button}>
     <div class="card-body d-flex align-items-center ">
         <div class=" inline btn btn-light d-flex align-items-center" onclick="openNewWindow('${link}')" >
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-download inline" viewBox="0 0 16 16">
@@ -39,7 +45,7 @@ function get_file_html(title,org,link, type, path){
 </svg>
           </div>
         <div style="width: 10px;"></div>
-        <div onclick="switch_to_dic(${func_path})" class="d-flex align-items-center "  style="padding-top: 7px; padding-bottom: 7px" >
+        <div ${small_button} class="d-flex align-items-center "  style="padding-top: 7px; padding-bottom: 7px" >
 
 ${img}
         <h5 class="card-title ml-2 title-case" style="padding-right: 2px; padding-left: 10px;">${title}</h5>
@@ -56,7 +62,7 @@ function info_card_html(info){
 
     return ` <div class="card file_card" >
   <div class="card-body">
-    <h5 class="card-title title-case">Other Info</h5>
+
    
 
 ${info}
@@ -156,7 +162,3 @@ function switch_to_dic(dict){
 
 
 }
-
-
-
-
