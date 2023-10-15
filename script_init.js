@@ -156,8 +156,9 @@ function switch_to_dic(dict){
          }}
          html += back_button_card(org ,back_text, parent)
         html += cards_html
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+
         reset_page(html)
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   // console.log(org);
 
 
