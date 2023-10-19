@@ -128,6 +128,7 @@ div.content {
   </button>
 <div class="collapse" id="collapseExample">
     <a class="dropdown-item" href="https://chat.whatsapp.com/Bc52i6BA5SXEyVsnK3ZmPs" target="_blank">Touro Ave J</a>
+      <a class="dropdown-item" href="https://chat.whatsapp.com/JUO09BKtYSL1xv12mF79YS" target="_blank">Landers Men </a>
         <a class="dropdown-item" href="https://chat.whatsapp.com/GYAhgGRJnryHe23lSEyY1d" target="_blank" >Touro Israel</a>
     <a class="dropdown-item" href="https://chat.whatsapp.com/G18yLm1ddoLIJ3JN4iEV1b" target="_blank">Job Network</a>
     <a class="dropdown-item" href="https://chat.whatsapp.com/CPp8UnNnIn1DWJdYPM7vCr" target="_blank" >Pre Health Community</a>
@@ -152,9 +153,18 @@ div.content {
     </div><!--cards-->
 
 
-<div class="disclaimer">
+<div class="disclaimer " id="disclaimer" >
+    <div class="col-sm-8 col-lg-10" style="display: inline-block">
     <p style="margin-bottom: 0px">The views and opinions expressed by students on this website are their own and do not necessarily reflect the views, opinions, or policies of Touro University.
  This website is not officially affiliated with Touro University, and the information shared here is not endorsed or verified by the university. It is your responsibility to independently verify the information and seek official guidance from Touro University regarding any academic or administrative matters.</p>
+    </div>
+    <div class="col-sm-1 col-lg-1" style="display: inline-block; align-content: space-between">
+        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+    </div>
+
 </div>
 
 </div> <!--end content-->
@@ -168,6 +178,9 @@ div.content {
   $(document).ready(function() {
     $('.dropdown-toggle').dropdown();
   });
+  document.getElementById('disclaimer').onclick = function() {
+    this.style.display = 'none';
+}
 </script>
 
 <script src="script.js"></script>
