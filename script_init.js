@@ -176,7 +176,7 @@ function switch_to_dic(dict){
         html += cards_html
 
         reset_page(html)
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
   // console.log(org);
 
 
